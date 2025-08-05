@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | SHAOLINKTATTOO</title>
+    <link rel="icon" href="images/logo2.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="Ink Masters Tattoo Studio Logo" class="logo-dark">
+            <img src="images/logo1.png" alt="Ink Masters Tattoo Studio Logo" class="logo-light">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <div class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-3V3M12 21v-3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48l2.12 2.12m0-12.72l-2.12 2.12m-8.48 8.48l-2.12 2.12"/>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Our Work</h2>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-button active" data-filter="all">All Styles</button>
+                </div>
+                
+                <div class="gallery-grid" style="contain: layout style;">
+                    <!-- Traditional style tattoos -->
+                    <div class="gallery-item" data-category="traditional">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7188.jpg" alt="Traditional Style Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Traditional Style</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="traditional">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7197.jpg" alt="Traditional Floral Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Traditional Floral</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="traditional">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7199.jpg" alt="Traditional Art Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Traditional Art</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="traditional">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7210.jpg" alt="Traditional Design Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Traditional Design</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Realism style tattoos -->
+                    <div class="gallery-item" data-category="realism">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7124.jpg" alt="Realistic Tattoo Art" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Realistic Art</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="realism">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7129.jpg" alt="Realistic Portrait Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Realistic Portrait</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="realism">
+                        <div class="gallery-image">
+                            <img src="images/SJH_6897.JPEG" alt="Realistic Detail Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Realistic Detail</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="realism">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7021.JPEG" alt="Realistic Nature Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Realistic Nature</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Geometric style tattoos -->
+                    <div class="gallery-item" data-category="geometric">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7162.jpg" alt="Geometric Pattern Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Geometric Pattern</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="geometric">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7177.jpg" alt="Geometric Design Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Geometric Design</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="geometric">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7267.jpg" alt="Geometric Art Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Geometric Art</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="geometric">
+                        <div class="gallery-image">
+                            <img src="images/SJH_7311.jpg" alt="Geometric Mandala Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Geometric Mandala</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional tattoo styles -->
+                    <div class="gallery-item" data-category="traditional">
+                        <div class="gallery-image">
+                            <img src="images/IMG_2121.jpg" alt="Custom Tattoo Design" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Custom Design</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="realism">
+                        <div class="gallery-image">
+                            <img src="images/IMG_2991.jpg" alt="Fine Art Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Fine Art</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="geometric">
+                        <div class="gallery-image">
+                            <img src="images/Untitled_Artwork.jpg" alt="Original Artwork Tattoo" loading="lazy" decoding="async">
+                            <div class="placeholder-image">Original Artwork</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for displaying larger images -->
+    <div id="gallery-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Enlarged tattoo">
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SHAOLINKTATTOO</h3>
+                    <p>Professional tattoo studio dedicated to bringing your ideas to life through exceptional artistry.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>66 Fulham High Street, London, SW6 3LQ</p>
+                    <p>Phone: +44 7748 010987</p>
+                    <p>Email: Shoalinktattoo@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SHAOLINKTATTOO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | SHAOLINKTATTOO</title>
+    <link rel="icon" href="images/logo2.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="Ink Masters Tattoo Studio Logo" class="logo-dark">
+            <img src="images/logo1.png" alt="Ink Masters Tattoo Studio Logo" class="logo-light">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <div class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-3V3M12 21v-3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48l2.12 2.12m0-12.72l-2.12 2.12m-8.48 8.48l-2.12 2.12"/>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+            </div>
+        </section>
+
+        <section class="booking">
+            <div class="container">
+                <div class="booking-intro">
+                    <p>Ready to bring your tattoo idea to life? Fill out the form below to schedule a consultation with our talented artist. We'll get back to you within 24-48 hours to confirm your appointment.</p>
+                </div>
+                
+                <!-- Formspree integration -->
+                <form id="booking-form" action="https://formspree.io/f/xwpqppgd" method="POST" class="booking-form" novalidate>
+                    <!-- Formspree configuration -->
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="hidden" name="_subject" value="New Tattoo Appointment Request">
+                    <input type="hidden" name="_gotcha" style="display:none">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="e.g., (123) 456-7890">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="preferred_date" class="form-control" required min="2023-01-01">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <input type="time" id="time" name="preferred_time" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="artist">Preferred Artist</label>
+                        <select id="artist" name="preferred_artist" class="form-control">
+                            <option value="Francesco Gaggini">Francesco Gaggini - Artist & CEO</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Tattoo Description *</label>
+                        <textarea id="description" name="tattoo_description" rows="5" class="form-control" required placeholder="Please describe your tattoo idea, including size, placement, and any reference images you might have."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Previous Tattoo Experience</label>
+                        <select id="experience" name="experience" class="form-control">
+                            <option value="First Tattoo">This will be my first tattoo</option>
+                            <option value="Few Tattoos">I have a few tattoos</option>
+                            <option value="Many Tattoos">I have many tattoos</option>
+                        </select>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I understand that a deposit may be required to secure my appointment *</label>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="submit-button">Request Appointment</button>
+                        <p class="form-note">* Required fields</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SHAOLINKTATTOO</h3>
+                    <p>Professional tattoo studio dedicated to bringing your ideas to life through exceptional artistry.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>66 Fulham High Street, London, SW6 3LQ</p>
+                    <p>Phone: +44 7748 010987</p>
+                    <p>Email: Shoalinktattoo@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SHAOLINKTATTOO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

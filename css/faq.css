@@ -1,0 +1,119 @@
+/* FAQ Section Styles */
+.faq-section {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    background-color: var(--color-background);
+}
+
+.faq-section h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    display: inline-block;
+    font-size: 2.2rem;
+}
+
+.faq-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-card-bg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-speed) ease;
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+    padding: var(--spacing-md);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: var(--color-text);
+    transition: background-color var(--transition-speed) ease;
+}
+
+.faq-question:hover {
+    background-color: var(--color-light-gray);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform var(--transition-speed) ease;
+}
+
+.faq-item.active .faq-question::after {
+    content: '−';
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-speed) ease;
+    padding: 0 var(--spacing-md);
+    color: var(--color-text);
+    opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Adjust based on content */
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    opacity: 1;
+    transition: max-height var(--transition-speed) ease, opacity var(--transition-speed) ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .faq-section h3 {
+        font-size: 1.8rem;
+    }
+    
+    .faq-question {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+    }
+    
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section h3 {
+        font-size: 1.6rem;
+    }
+    
+    .faq-question {
+        padding: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+    
+    .faq-answer {
+        font-size: 0.85rem;
+    }
+}
